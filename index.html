@@ -1,80 +1,200 @@
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Be Your Brand</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/ie7.css" type="text/css">
-</head>
-<body>
-	<div class="header">
-		<div>
-			<a href="index.html" id="logo"><img src="images/logo1.png" alt="logo"></a>
-			<ul>
-			<li class="selected">
-			<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a>About</a>
-				</li>
-				<li>
-					<a href="collections.html">Collections</a>
-					<ul>
-						<li>
-							<a>Women's</a>
-						</li>
-						<li>
-							<a>Men's</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a>Blog</a>
-				</li>
-				<li>
-					<a>Stores</a>
-				</li>
-			</ul>
-		</div>
-		<div class="featured">
-			<img src="images/fashion.jpg" alt="">
-			<div>
-				<h3> "Attitude is everything" </h3>
+	<head>
+		<title>BE YOUR BRAND</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link rel="stylesheet" href="includes/css/styles.css">
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body style="background-color:#BDBDBD">
+		<div class="container" id="main" >
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="images/logo1.png" alt="Your Logo"></a>
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav" id="nav">
+							<li class="active">
+								<a href="index.html">HOME</a>
+							</li>
+							<li>
+								<a href="stores.html">STORES</a>
+							</li>
+							<li class="dropdown">
+								<a  class="dropdown-toggle" data-toggle="dropdown">COLLECTIONS<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a>MEN'S</a>
+									</li>
+									<li>
+										<a>WOMEN'S</a>
+									</li>
+									</ul>
+									</li>
+								</ul>
+								
+							<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="body">
-		<div>
-			<h2>Welcome to the 2017 Spring collection from "Be Your Brand"</h2>
-			<ul>
-				<li>
-					<a><img src="images/figure2.jpg" alt="Spring Collection"></a> <a>Spring Collection</a>
-				</li>
-				<li>
-					<a><img src="images/figure3.jpg" alt="Summer Collection"></a> <a>Summer Collection</a>
-				</li>
-				<li>
-					<a><img src="images/figure4.jpg" alt="The Artist"></a> <a>The Artist</a>
-				</li>
-				<li>
-					<a><img src="images/figure5.jpg" alt="The BeMyBrand Blog"></a> <a>The BeYourBrand Blog</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="footer">
-		<div>
-			<ul>
-				<li>
-					<a href="#">Privacy Policy</a>
-				</li>
-				<li>
-					<a href="#">Terms And Conditons</a>
-				</li>
-			</ul>
-			<div class="connect">
-				<a href=" " id="twitter">Twitter</a> <a href=" " id="facebook">Facebook</a> <a href=" " id="instagram">Instagram</a>
+			
+			<div class="carousel slide" id="myCarousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<p>Fashion is not necessarily about labels. Its not about brands. Its about something else that comes from within you.</p>
+						</div>
+					</div>
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<p>In a machine age, dressmaking is one of the last refuges of the human, the personal, the inimitable.</p>
+						</div>
+					</div>
+
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<p>You gotta have style. It helps you get down the stairs. It helps you get up in the morning. Its a way of life. Without it, you are nobody.</p>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
 			</div>
-		</div>
-	</div>
-</body>
+
+			<div class="row" id="bigCallout">
+				<div class="col-12">
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<h4>Success!</h4>
+						<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+					</div>
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div>
+
+					<div class="well">
+						<div class="page-header">
+							<h1>Fashion</h1>
+						</div>
+						<p class="lead">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture. Fashion is a distinctive and often constant trend in the style in which a person dresses. It is the prevailing styles in behaviour and the newest creations of textile designers. Because the more technical term costume is regularly linked to the term "fashion", the use of the former has been relegated to special senses like fancy dress or masquerade wear, while "fashion" generally means clothing, including the study of it. Although aspects of fashion can be feminine or masculine, some trends are androgynous.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>Latest Collections</h2>
+					<p class="lead">Welcome to the 2017 New Year Collections from "Be Your Brand"</p>
+				</div>
+			</div>
+
+
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Spring Collections</h3>
+						</div>
+						<img src="images/figure9.jpg" alt="HTML5" class="img-circle">
+						<p>Spring represents renewal and rebirth. The warming weather revitalizes plant life, adding color to the drab outdoors. Dress yourself for the season by adding color and life back into your wardrobe. Keeps you cool as the weather warms up.</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Summer Collections</h3>
+						</div>
+						<img src="images/figure10.jpg" alt="CSS3" class="img-circle">
+						<p>Summer can be a challenging season to dress for many women. You reveal more about yourself and your body than in any other season and have fewer layering tricks at your disposal to either cover up certain parts or create a nice silhouette. </p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Autumn Collections</h3>
+						</div>
+						<img src="images/figure11.png" alt="Bootstrap 3" class="img-circle">
+						<p>The autumn season has arrived! This short how-to will be your guide to dressing fashionably for the autumn season (for girls.). When I was just learning how to dress for fall, this was the first trend I got down pat!</p>
+						</div>
+				</div>
+			</div>
+			
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2017 BEYOURBRAND</h6>
+					</div>
+
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>BEYOURBRAND is well known for their ornate silk collections which uses the richest of silks sourced from Banaras, Gujarat and South India. By always using pure fabrics, paying attention to fine quality, intricate stitching and embroidery details, BEYOURBRAND has created a niche for itself as a designer label.</p>
+					</div>
+
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Instagram</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Praniboy</h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="includes/js/script.js"></script>
+	</body>
 </html>
